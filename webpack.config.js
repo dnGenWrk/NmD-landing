@@ -39,14 +39,7 @@ module.exports = {
 				use: [
 					devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
 					'css-loader',
-					{
-						loader: 'postcss-loader',
-						options: {
-							postcssOptions: {
-								plugins: [require('postcss-preset-env')],
-							},
-						},
-					},
+					'postcss-loader',
 					'sass-loader',
 				],
 			},
@@ -92,7 +85,7 @@ module.exports = {
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: [['@babel/preset-env', { targets: 'defaults' }]],
+						presets: [['@babel/preset-env', {targets: 'defaults'}]],
 					},
 				},
 			},

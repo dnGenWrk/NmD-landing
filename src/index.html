@@ -1,98 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<title>NmD landing page</title>
-		<script>
-			function addClass(A) {
-				document.documentElement.classList.add(A);
-			}
-			var avif = new Image();
-			function check_webp_feature(a) {
-				var e = new Image();
-				(e.onload = function () {
-					var A = 0 < e.width && 0 < e.height;
-					a(A);
+<head>
+	<meta charset="UTF-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+	<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+	<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+	<link href="/site.webmanifest" rel="manifest"/>
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<title>NmD landing page</title>
+	<script>
+		function addClass(A) {
+			document.documentElement.classList.add(A);
+		}
+		
+		var avif = new Image();
+		
+		function check_webp_feature(a) {
+			var e = new Image();
+			(e.onload = function () {
+				var A = 0 < e.width && 0 < e.height;
+				a(A);
+			}),
+				(e.onerror = function () {
+					a(!1);
 				}),
-					(e.onerror = function () {
-						a(!1);
-					}),
-					(e.src = 'data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==');
-			}
-			(avif.src =
-				'data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A='),
-				(avif.onload = function () {
-					addClass('avif');
-				}),
-				(avif.onerror = function () {
-					check_webp_feature(function (A) {
-						return addClass(A ? 'webp' : 'fallback');
-					});
+				(e.src = 'data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==');
+		}
+		
+		(avif.src =
+			'data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAADybWV0YQAAAAAAAAAoaGRscgAAAAAAAAAAcGljdAAAAAAAAAAAAAAAAGxpYmF2aWYAAAAADnBpdG0AAAAAAAEAAAAeaWxvYwAAAABEAAABAAEAAAABAAABGgAAAB0AAAAoaWluZgAAAAAAAQAAABppbmZlAgAAAAABAABhdjAxQ29sb3IAAAAAamlwcnAAAABLaXBjbwAAABRpc3BlAAAAAAAAAAIAAAACAAAAEHBpeGkAAAAAAwgICAAAAAxhdjFDgQ0MAAAAABNjb2xybmNseAACAAIAAYAAAAAXaXBtYQAAAAAAAAABAAEEAQKDBAAAACVtZGF0EgAKCBgANogQEAwgMg8f8D///8WfhwB8+ErK42A='),
+			(avif.onload = function () {
+				addClass('avif');
+			}),
+			(avif.onerror = function () {
+				check_webp_feature(function (A) {
+					return addClass(A ? 'webp' : 'fallback');
 				});
-		</script>
-	</head>
+			});
+	</script>
+</head>
 
-	<body>
-		<div class="landingNmd-wrapper">
-			<header>
-				<div class="bg-wrapper">
-					<div class="header-top">
-						<div class="header-nav-wrapper">
-							<button id="nav-button-prime"><img src="./img/hero/menu-line.svg" alt="" /></button>
-							<nav id="dsktop-nav-general" class="dsk-nav">
-								<ul>
-									<li><a href="#">Home</a></li>
-									<li><a href="#">About</a></li>
-									<li><a href="#">Features</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="header-logo"><img src="./img/hero/logo.png" alt="Appolo company logo" /></div>
-						<div class="header-cta">
-							<nav id="dsktop-nav-secondary" class="dsk-nav">
-								<ul>
-									<li><a href="#">Screenshot</a></li>
-									<li><a href="#">Blog</a></li>
-								</ul>
-							</nav>
-							<button id="header-cta-dowmload">Download</button>
-						</div>
-					</div>
-					<div class="header-content">
-						<div class="header-content-promo">
-							<div class="promo-wrapper">
-								<div class="promo-content">
-									<h1 class="promo-content-title">A Great App Makes Your Life Better</h1>
-									<h2 class="promo-subtitle">
-										Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-									</h2>
-									<div class="promo-btn">Download App Now</div>
-									<div class="stores-icon">
-										<img src="./img/hero/stores-icons.svg" alt="" />
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="header-content-media">
-							<picture>
-								<source srcset="./img/hero/hero-item.webp" />
-								<img src="./img/hero/hero-item.png" alt="The Device" />
-							</picture>
-						</div>
-					</div>
+<body>
+<div class='landing-npd-wrpapper flex flex-col'>
+	<header class='lp-header'>
+		<div class='container mx-auto px-4 md:px-10 xl:px-[183px] pb-[98px] pt-[30px] md:pt-[70px] md:pb-[222px] xl:pt-[60px] xl:pb-[68px]'>
+			<div class='nav-block flex items-center overflow-hidden'>
+				<div class='nav-block__section w-[35%] md:w-[40%] lg:w-[42%] h-10 lg:h-[60px] flex items-center rounded-l-lg'>
+					<button class='ml-1 lg:hidden'><img alt='Menu button image' src='/src/img/hero/menu-line.svg'/></button>
+					<nav class='primary-nav hidden lg:block w-full'>
+						<ul class='flex flex-row justify-center gap-8'>
+							<li>Home</li>
+							<li>About</li>
+							<li>Features</li>
+						</ul>
+					</nav>
 				</div>
-			</header>
-			<main>
-				<h1 class="test-font">MAIN HERE</h1>
-			</main>
-			<footer>
-				<h1 class="test-font">Footer HERE</h1>
-			</footer>
+				<div
+					class='nav-block__section w-[30%] md:w-[20%] lg:w-[16%] h-[60px] lg:h-[90px] flex items-center place-content-center rounded-lg drop-shadow-md'>
+					<img alt="There is out company logo" class='w-11/12 lg:w-9/12' src="/src/img/hero/logo.png"/>
+				</div>
+				<div
+					class='nav-block__section w-[35%] md:w-[40%] lg:w-[42%] h-10 lg:h-[60px] flex items-center place-content-center md:place-content-end rounded-r-lg'>
+					<nav class='primary-nav addition-nav hidden lg:block w-full'>
+						<ul class='flex flex-row justify-center gap-8'>
+							<li>Screenshot</li>
+							<li>Blog</li>
+						</ul>
+					</nav>
+					<button class='nav-block__cta h-[86%] px-2 md:px-4 rounded-md md:mr-1'>Download</button>
+				</div>
+			</div>
 		</div>
-	</body>
+	</header>
+	<main class='grow'>MAIN HERE</main>
+	<footer> FOOTER</footer>
+</div>
+
+</body>
 </html>

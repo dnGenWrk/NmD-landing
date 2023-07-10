@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '/src/style/colors.scss';
+
+.landing-npd-wrpapper {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+.lp-header {
+  background-color: $royal-blue;
+}
+
+.nav-block {
+  .nav-block__section {
+	background-color: #fff;
+
+	.primary-nav {
+	  color: $black1;
+	  font-size: 1.4rem;
+	  font-weight: 500;
+	}
+  }
+
+  .nav-block__cta {
+	background-color: $royal-blue;
+	color: #fff;
+  }
+}

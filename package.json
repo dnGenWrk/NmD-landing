@@ -1,40 +1,41 @@
 {
-	"name": "wbp-template",
-	"version": "1.0.0",
-	"description": "",
-	"repository": {
-		"url": "git+https://github.com/dnGenWrk/NmD-landing.git"
-	},
-	"main": "index.js",
-	"scripts": {
-		"start": "webpack serve",
-		"build-dev": "webpack",
-		"build-prod": "webpack --node-env=production",
-		"clear": "rd /s /q dist",
-		"predeploy": "npm run build-prod",
-		"deploy": "gh-pages -d dist"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@babel/core": "^7.22.5",
-		"@babel/preset-env": "^7.22.5",
-		"babel-loader": "^9.1.2",
-		"css-loader": "^6.8.1",
-		"gh-pages": "^5.0.0",
-		"html-loader": "^4.2.0",
-		"html-webpack-plugin": "^5.5.3",
-		"image-webpack-loader": "^8.1.0",
-		"mini-css-extract-plugin": "^2.7.6",
-		"postcss": "^8.4.24",
-		"postcss-loader": "^7.3.3",
-		"postcss-preset-env": "^8.5.1",
-		"sass": "^1.63.5",
-		"sass-loader": "^13.3.2",
-		"style-loader": "^3.3.3",
-		"webpack": "^5.87.0",
-		"webpack-cli": "^5.1.4",
-		"webpack-dev-server": "^4.15.1"
-	}
+  "name": "wbp-template",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "url": "git+https://github.com/dnGenWrk/NmD-landing.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build-dev": "webpack",
+    "build-prod": "webpack --node-env=production",
+    "clear": "rd /s /q dist",
+    "predeploy": "npm run build-prod",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "gh-pages": "^5.0.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.24",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^8.5.1",
+    "sass": "^1.63.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.2",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
 }
