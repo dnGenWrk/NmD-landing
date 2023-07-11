@@ -46,11 +46,12 @@
 <body>
 <div class='landing-npd-wrpapper flex flex-col'>
 	<header class='lp-header'>
-		<div class='container mx-auto px-4 md:px-10 xl:px-[183px] pb-[98px] pt-[30px] md:pt-[70px] md:pb-[222px] xl:pt-[60px] xl:pb-[68px]'>
-			<div class='nav-block flex items-center overflow-hidden'>
+		<div class='container mx-auto px-4 md:px-10 xl:px-[183px]'>
+			<div
+				class='nav-block flex items-center overflow-hidden pb-[98px] pt-[30px] md:pt-[70px] md:pb-[122px] xl:pt-[60px] xl:pb-[68px]'>
 				<div class='nav-block__section w-[35%] md:w-[40%] lg:w-[42%] h-10 lg:h-[60px] flex items-center rounded-l-lg'>
 					<button class='ml-1 lg:hidden'><img alt='Menu button image' src='/src/img/hero/menu-line.svg'/></button>
-					<nav class='primary-nav hidden lg:block w-full'>
+					<nav class='primary-nav hidden lg:block w-full animate-jump-in animate-delay-300 animate-once'>
 						<ul class='flex flex-row justify-center gap-8'>
 							<li>Home</li>
 							<li>About</li>
@@ -60,11 +61,13 @@
 				</div>
 				<div
 					class='nav-block__section w-[30%] md:w-[20%] lg:w-[16%] h-[60px] lg:h-[90px] flex items-center place-content-center rounded-lg drop-shadow-md'>
-					<img alt="There is out company logo" class='w-11/12 lg:w-9/12' src="/src/img/hero/logo.png"/>
+					<img alt="There is out company logo"
+						 class='w-11/12 lg:w-9/12 animate-fade-up animate-once animate-duration-[600ms] animate-delay-300 animate-ease-in'
+						 src="/src/img/hero/logo.png"/>
 				</div>
 				<div
 					class='nav-block__section w-[35%] md:w-[40%] lg:w-[42%] h-10 lg:h-[60px] flex items-center place-content-center md:place-content-end rounded-r-lg'>
-					<nav class='primary-nav addition-nav hidden lg:block w-full'>
+					<nav class='primary-nav addition-nav hidden lg:block w-full animate-jump-in animate-delay-900 animate-once'>
 						<ul class='flex flex-row justify-center gap-8'>
 							<li>Screenshot</li>
 							<li>Blog</li>
@@ -73,9 +76,103 @@
 					<button class='nav-block__cta h-[86%] px-2 md:px-4 rounded-md md:mr-1'>Download</button>
 				</div>
 			</div>
+			<div class='w-full flex flex-wrap flex-row  md:flex-nowrap md:justify-between md:items-center mb-[120px] xl:mb-[80px]'>
+				<div class='w-full md:w-6/12 xl:w-7/12 mb-8 md:mb-0'>
+					<div class='hero-content-block-wrapper border-8 border-indigo-500 pt-2 pb-2'>
+						<div class='hero-content-block bg-white pb-5 pr-3 pt-8 pl-3 -translate-x-4'>
+							<h1 class='text-2xl xl:text-6xl text-indigo-500 antialiased font-medium pb-5'>A Great App Makes Your Life
+								Better</h1>
+							<p class='text-base pb-8 text-gray-600 leading-6'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+								amet
+								sint. Velit
+								officia
+								consequat
+								duis enim
+								velit mollit.</p>
+							<p class='text-gray-800 text-xl pb-4 uppercase leading-6 font-medium'>Download App Now</p>
+							<div class='stores-icons-section flex w-full gap-3'>
+								<a href='#'>
+									<picture>
+										<!--<source srcset="./img/store_buttons/gplay_icon.avif" type="image/avif">-->
+										<source srcset="./img/store_buttons/gplay_icon.webp" type="image/webp">
+										<img alt="Please see out app in Google Play Store" src="./img/store_buttons/gplay_icon.png">
+									</picture>
+								</a>
+								<a href='#'>
+									<picture>
+										<!--<source srcset="./img/store_buttons/app_store.avif" type="image/avif">-->
+										<source srcset="./img/store_buttons/app_store.webp" type="image/webp">
+										<img alt="Please see out app in App store" src="./img/store_buttons/app_store.png">
+									</picture>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='w-full md:w-6/12 xl:w-5/12 h-full object-contain flex'>
+					<img alt="A picture of an mobile telephone"
+						 class='img-animated'
+						 src="./img/hero/app.svg">
+				</div>
+			</div>
 		</div>
 	</header>
-	<main class='grow'>MAIN HERE</main>
+	<main class='grow'>
+		<div class='container mx-auto px-4 md:px-10 xl:px-[183px]'>
+			<article class='pt-[60px] md:pt-[120px]'>
+				<h3 class='text-2xl md:text-3xl text-gray-900 pb-5 md:font-bold text-center'>About Our App</h3>
+				<p class='text-base text-gray-700 pb-10 md:pb-16 text-center lg:w-8/12 mx-auto'>Lorem ipsum dolor sit amet, consectetur
+					adipiscing
+					elit.
+					Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+					ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+				<div class='md:flex md:flex-row flex-wrap items-center'>
+					<picture class='md:w-6/12'>
+						<source srcset="./img/blades/content-blade-1.avif" type="image/avif">
+						<source srcset="./img/blades/content-blade-1.webp" type="image/webp">
+						<img alt="Please see out app in Google Play Store"
+							 class='w-10/12 md:w-8/12 mx-auto md:mr-auto md:ml-0 img-animated mb-4 md:mb-0'
+							 src="./img/blades/content-blade-1.png">
+					</picture>
+					<div class='flex flex-col md:w-6/12'>
+						<div
+							class='feature-card flex flex-grow-0 flex-shrink-0 rounded-lg shadow-md p-4 border border-gray-200 border-opacity-80 mb-4 md:mb-7'>
+							<div class='ico mr-4 w-[40px]'><img alt='' src='./img/blades/checkbox-circle-fill.svg'></div>
+							<div class='content'>
+								<h4 class='text-gray-800 font-bold text-xl'>Creative design</h4>
+								<p class='text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div
+							class='feature-card flex flex-grow-0 flex-shrink-0 rounded-lg shadow-md p-4 border border-gray-200 border-opacity-80 mb-4 md:mb-7'>
+							<div class='ico mr-4 w-[40px]'><img alt='' src='./img/blades/checkbox-circle-fill.svg'></div>
+							<div class='content'>
+								<h4 class='text-gray-800 font-bold text-xl'>Creative design</h4>
+								<p class='text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div
+							class='feature-card flex flex-grow-0 flex-shrink-0 rounded-lg shadow-md p-4 border border-gray-200 border-opacity-80 mb-4 md:mb-7'>
+							<div class='ico mr-4 w-[40px]'><img alt='' src='./img/blades/checkbox-circle-fill.svg'></div>
+							<div class='content'>
+								<h4 class='text-gray-800 font-bold text-xl'>Creative design</h4>
+								<p class='text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div
+							class='feature-card flex flex-grow-0 flex-shrink-0 rounded-lg shadow-md p-4 border border-gray-200 border-opacity-80 mb-4 md:mb-7'>
+							<div class='ico mr-4 w-[40px]'><img alt='' src='./img/blades/checkbox-circle-fill.svg'></div>
+							<div class='content'>
+								<h4 class='text-gray-800 font-bold text-xl'>Creative design</h4>
+								<p class='text-gray-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</article>
+		</div>
+	</main>
 	<footer> FOOTER</footer>
 </div>
 
