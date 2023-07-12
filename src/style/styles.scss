@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '/src/style/colors.scss';
+@import "/src/style/colors.scss";
 
 .landing-npd-wrpapper {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
 }
 
@@ -12,38 +12,53 @@
   background-color: $royal-blue;
   background-image: url("/src/img/hero/background_image2x.png");
   background-size: cover;
-
 }
 
 .avif {
   .lp-header {
-	background-image: url("/src/img/hero/background_image2x.avif");
+    background-image: url("/src/img/hero/background_image2x.avif");
   }
 }
 
 .webp {
   .lp-header {
-	background-image: url("/src/img/hero/background_image2x.webp");
+    background-image: url("/src/img/hero/background_image2x.webp");
   }
 }
 
 .nav-block {
   .nav-block__section {
-	background-color: #fff;
+    background-color: #fff;
 
-	.primary-nav {
-	  color: $black1;
-	  font-size: 1.2rem;
-	  font-weight: 500;
-	}
+    .primary-nav {
+      color: $black1;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
   }
 
   .nav-block__cta {
-	background-color: $royal-blue;
-	color: #fff;
+    background-color: $royal-blue;
+    color: #fff;
   }
 }
 
 .img-animated {
-  @apply animate-fade animate-once animate-duration-[1200ms] animate-delay-200 animate-ease-in animate-normal animate-fill-forwards
+  @apply animate-fade animate-once animate-duration-[1200ms] animate-delay-200 animate-ease-in animate-normal animate-fill-forwards;
+}
+.blade-2-bg {
+  background-size: cover;
+}
+.blade-2-bg {
+  background-image: url("/src/img/blades/blade-2/bg-blade-2.png");
+}
+.avif {
+  .blade-2-bg {
+    background-image: url("/src/img/blades/blade-2/bg-blade-2.avif");
+  }
+}
+.webp {
+  .blade-2-bg {
+    background-image: url("/src/img/blades/blade-2/bg-blade-2.webp");
+  }
 }

@@ -1,2 +1,9 @@
-import './index.html';
-import './index.scss';
+import "./index.html";
+import "./index.scss";
+
+const temp = function (arg1, arg2) {
+  for (let i = 0; i <= arg1.length; i++) {
+    console.log("asffsafs");
+  }
+  return 0;
+};
