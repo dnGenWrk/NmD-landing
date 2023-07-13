@@ -62,3 +62,22 @@
     background-image: url("/src/img/blades/blade-2/bg-blade-2.webp");
   }
 }
+
+.animation-on-scroll {
+}
+
+.animation_fade {
+  @apply animate-fade animate-duration-[1200ms] animate-delay-[400ms] animate-ease-in;
+}
+.animation_fade-from-left {
+  @apply animate-fade-left animate-duration-[1200ms] animate-delay-[400ms] animate-ease-in;
+}
+.animation_fade-from-right {
+  @apply animate-fade-right animate-duration-[1200ms] animate-delay-[400ms] animate-ease-in;
+}
+.animation_fade-from-top {
+  @apply animate-fade-down animate-duration-[500ms] animate-delay-[100ms] animate-ease-in;
+}
+.animation_fade-from-bottom {
+  @apply animate-fade-up animate-duration-[500ms] animate-delay-[100ms] animate-ease-in;
+}
